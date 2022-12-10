@@ -1,0 +1,19 @@
+.Input {
+    display: flex;
+    justify-content: center;
+}
+input{
+    font-size:44px;
+    border-radius:18px 18px 18px 18px;
+    background-color: rgba(200, 194, 194, 0.545);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.InputButton {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 24px;
+}

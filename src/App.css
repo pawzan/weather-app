@@ -14,9 +14,14 @@ body {
 .AppContainer {
   background-color: rgba(110, 108, 106, 0.287);
   padding: 30px;
-  width: 50%;
-
 }
 
+
+@media  screen and (max-width: 768px) {
+    .AppContainer {
+      width: 86%;
+    }
+    
+}
 
 

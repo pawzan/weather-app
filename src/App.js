@@ -1,14 +1,16 @@
 import "./App.css";
 import WeatherComponent from "./components/WeatherComponents/WeatherComponent";
 import Input from "./components/Input/Input";
+import FavoritesCity from "./components/FavoritesCity/FavoritesCity";
 
 function App() {
   return (
     <div className="App">
       <div className="AppContainer">
         <Input />
-        {/* <WeatherComponent /> */}
+        <WeatherComponent />
       </div>
+      <FavoritesCity />
     </div>
   );
 }

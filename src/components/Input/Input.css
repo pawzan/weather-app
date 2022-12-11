@@ -7,7 +7,6 @@ input{
     border-radius:18px 18px 18px 18px;
     background-color: rgba(200, 194, 194, 0.545);
     color: white;
-    width: 100%;
     text-align: center;
 }
 
@@ -16,4 +15,12 @@ input{
     border: transparent;
     color: white;
     font-size: 24px;
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 768px) {
+    .Input {
+      flex-direction: column;
+    }
+    
 }

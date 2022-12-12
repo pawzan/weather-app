@@ -5,13 +5,21 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 const WeatherComponent = () => {
   const [checkLikeCity, setCheckLikeCity] = useState(true);
 
+  const changeLike = () => {
+    if (checkLikeCity) {
+      setCheckLikeCity(false);
+    } else {
+      setCheckLikeCity(true);
+    }
+  };
+
   return (
     <div className="weatherComponent">
       <div className="weatherHeart">
         {checkLikeCity ? (
-          <AiFillHeart size={44} color="red" />
+          <AiFillHeart size={44} color="red" onClick={changeLike} />
         ) : (
-          <AiOutlineHeart size={44} color="red" />
+          <AiOutlineHeart size={44} color="red" oncClick={changeLike} />
         )}
       </div>
       <div
